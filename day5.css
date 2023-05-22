@@ -1,0 +1,52 @@
+html {
+font-size: 100px;
+}
+
+.Test {
+font-size: 75px;
+border: 2px dashed purple;
+padding: 25px;
+margin: 100px;
+}
+
+p, ul {
+border: 2px solid rebeccapurple;
+padding: .5rem;
+}
+
+li, .block {
+border: 2px solid blue;
+padding: .5rem
+}
+
+ul {
+display: flex;
+list-style: none;
+border: 3px solid red;
+}
+
+.block {
+    display: block;
+
+}
+
+img {
+height: 200px;
+width: auto;
+border: 3px solid olive;
+padding: 20px;
+margin: 20px;
+}
+
+.flex {
+    display: flex;
+    border: 2px dashed orangered; 
+    /* background-color: blanchedalmond; */
+    /* background-image: linear-gradient(circle, rgba(8, 57, 58, 1), 39%, rgba (51, 60, 71, 80) 96%);background-size: 100px 50px
+    105deg, */   
+background-image: url(buff.png); 
+background-size: 135px 100px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
