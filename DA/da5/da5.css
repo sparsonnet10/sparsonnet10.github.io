@@ -1,0 +1,18 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+article{
+    position: absolute;
+    top: 10mm;
+    right: 20mm;
+    width: 5mm;
+    height: 4mm;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 600px 200px;
+    text-shadow: 1px 1px 1px black;
+    background-size: 2mm 3mm;
+    
+}
