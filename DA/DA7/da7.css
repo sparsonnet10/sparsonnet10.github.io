@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(242, 218, 241);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(198, 147, 246);
+    
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(153, 0, 255);
+}
+
+
+img:hover{
+    width:30vw;
+    height: 30vh;
+    background-color: blueviolet;
+}
+
+#red-ball{
+    background-color: rgb(39, 38, 38);
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: ball2move;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball2move {
+    0% {background-color: rgb(240, 163, 248); bottom:0px; top: 0px;}
+    100% {background-color: rgb(255, 21, 0); top: 250px; bottom: 0px;}
+    
+}
