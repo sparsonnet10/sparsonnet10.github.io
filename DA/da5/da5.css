@@ -2,17 +2,29 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-article{
-    position: absolute;
-    top: 10mm;
-    right: 20mm;
-    width: 5mm;
-    height: 4mm;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 600px 200px;
-    text-shadow: 1px 1px 1px black;
-    background-size: 2mm 3mm;
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .image2 {
+    position: fixed;
+    top: 500px;
+    left: 700px;
+    border: 1px solid #000000;
+  }
+
+  .image3 {
+    position: fixed;
+    top: 50px;
+    left: 70px;
     
-}
+  }
