@@ -44,59 +44,61 @@
         font-size: 1.1rem;
         color: #aaa;
       }
-
-
     </style>
 </head>
 <body>
-
     <div class="divSquare">Eat Me!</div>
 
     <button id="button_A">Eat Me!</button>
     <h3 id="heading_A">You grew 3x your height!</h3>
 
     <button>Display message box</button>
-    
     <script>
-        console.log("this is some output from an internal script element")
+
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", () => 
+    displayMessage("Your inbox is almost full - delete some mails", "warning");
+    displayMessage("Brian: Hi there, how are you doing today?", "chat");
+
+
+    // function
+function displayMessage(msgText, msgType) {
+    const body = document.body;
+
+const panel = document.createElement("div");
+panel.setAttribute("class", "msgBox");
+body.appendChild(panel);
+
+const msg = document.createElement("p");
+msg.textContent = msgText;
+panel.appendChild(msg);
+
+const closeBtn = document.createElement("button");
+closeBtn.textContent = "x";
+panel.appendChild(closeBtn);
+// this function will be called when the user clicks the close button
+closeBtn.addEventListener("click", () =>
+  panel.parentNode.removeChild(panel)
+);
+<div class="msgBox">
+  <p>This is a message box</p>
+  <button>x</button>
+</div>
+
+displayMessage();
+
+if (msgType === "warning") {
+  msg.style.backgroundImage = "url(icons/warning.png)";
+  panel.style.backgroundColor = "red";
+} else if (msgType === "chat") {
+  msg.style.backgroundImage = "url(icons/chat.png)";
+  panel.style.backgroundColor = "aqua";
+} else {
+  msg.style.paddingLeft = "20px";
+}
+
+}
+
     </script>
-    <script>
-        const btn = document.querySelector("button");
-        btn.addEventListener("click", () => 
-        displayMessage("Your inbox is almost full - delete some emails", "warning"));
-        displayMessage("Brian: Hi there, how are you today?", "chat"); 
-
-        function displayMessage(msgText, msgType) {
-        const body = document.body;
-        if (msgType === "warning") {
-        msg.style.backgroundImage = "url(icons/warning.png)";
-        panel.style.backgroundColor = "red";
-        } else if (msgType === "chat") {
-        msg.style.backgroundImage = "url(icons/chat.png)";
-        panel.style.backgroundColor = "aqua";
-        } else {
-        msg.style.paddingLeft = "20px";
-        }
-
-        const panel = document.createElement("div");
-        panel.setAttribute("class", "msgBox");
-        body.appendChild(panel);
-
-        const msg = document.createElement("p");
-        msg.textContent = msgText;
-        panel.appendChild(msg);
-
-        const closeBtn = document.createElement("button");
-        closeBtn.textContent = "x";
-        panel.appendChild(closeBtn);
-
-        closeBtn.addEventListener("click", () =>
-        panel.parentNode.removeChild(panel)
-        );
-        }
-
-    displayMessage()
-    </script>
-
 </body>
 </html>
