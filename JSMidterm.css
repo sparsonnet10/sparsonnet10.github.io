@@ -1,14 +1,14 @@
 h1 {
 font-size: 30px;
 padding: 30px;
-border: 25px dotted palevioletred;
+border: 25px dotted #ff00c8;
 
 }
 
 h2 {
 font-size: 30px;
 padding: 30px;
-border: 25px dotted green;
+border: 25px dotted #48ff00;
 }
 
 html, body {
