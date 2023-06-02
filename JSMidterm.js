@@ -1,4 +1,4 @@
-// Returns a random integer from 0 to 100:
+// Returns a random integer from 0 to 50:
 
 document.getElementById("demo").innerHTML = Math.floor(Math.random() * 101);
 
@@ -7,6 +7,7 @@ function Random() {
     document.getElementById('random').value = rnd;
 }
 
+// returns a random integer from 51-100: 
 document.getElementById("demo").innerHTML = Math.floor(Math.random() * 101);
 
 function Random2() {
